@@ -1,0 +1,467 @@
+1
+00:00:00,150 --> 00:00:04,740
+So in this video, I just want to go over my environment, my text editor, some of the extensions I'll
+
+2
+00:00:04,740 --> 00:00:09,930
+be using and also some of the resources for this course and stuff will be using in the course.
+
+3
+00:00:10,230 --> 00:00:13,050
+So this is the repository for the final project.
+
+4
+00:00:13,050 --> 00:00:16,980
+It's under my GitHub account, Brad Trabelsi and its pro shopman.
+
+5
+00:00:17,370 --> 00:00:21,870
+So you can come here, you can see all the the files for this project.
+
+6
+00:00:22,110 --> 00:00:26,670
+And also, if you go to the comments, what I tried to do is do a get comment.
+
+7
+00:00:26,670 --> 00:00:29,870
+After every video, there were a couple times where I forgot.
+
+8
+00:00:29,880 --> 00:00:34,890
+So there was like a few videos worth of code in in some of these comments.
+
+9
+00:00:34,890 --> 00:00:37,590
+But for the most part, they match up with each video.
+
+10
+00:00:37,740 --> 00:00:43,370
+So, for instance, when we created the order pay producer and action.
+
+11
+00:00:43,500 --> 00:00:48,030
+So if you wanted to see the exact code that was added, you can come here and you could see what was
+
+12
+00:00:48,030 --> 00:00:49,700
+added or what was removed.
+
+13
+00:00:49,830 --> 00:00:54,840
+So that should be helpful to you if if something's, you know, if you're messed up with something and
+
+14
+00:00:54,840 --> 00:00:56,190
+you need to see the final code.
+
+15
+00:00:56,940 --> 00:01:00,030
+So I'm using Visual Studio code for my text editor.
+
+16
+00:01:00,540 --> 00:01:02,610
+Chances are a lot of you are using this.
+
+17
+00:01:02,910 --> 00:01:06,780
+It's very popular in the Web dev community and I would highly recommend it.
+
+18
+00:01:06,780 --> 00:01:13,590
+But if you want to use, like, sublime text or Adam or some kind of idy, so anything that you use
+
+19
+00:01:13,590 --> 00:01:15,360
+that you used to, that's absolutely fine.
+
+20
+00:01:15,360 --> 00:01:16,860
+You don't have to use voice code.
+
+21
+00:01:17,070 --> 00:01:19,800
+It's just what I use and what I usually suggest.
+
+22
+00:01:19,800 --> 00:01:21,610
+And it's of course it's cross platform.
+
+23
+00:01:22,470 --> 00:01:27,750
+Next you need to have not just installed on your machine if you don't just go to NOGs Dog.
+
+24
+00:01:27,990 --> 00:01:30,660
+And I would suggest grabbing the latest version.
+
+25
+00:01:31,110 --> 00:01:35,970
+We're actually going to be using its modules on our back end, which is the import syntax.
+
+26
+00:01:36,000 --> 00:01:40,440
+So it's the same syntax as the front end with react and after version.
+
+27
+00:01:40,440 --> 00:01:43,940
+I believe it was 14. Six of No Jass.
+
+28
+00:01:44,040 --> 00:01:47,040
+You don't have to add the experimental modules flag.
+
+29
+00:01:47,250 --> 00:01:50,610
+So I would definitely suggest using at least 14 dot six.
+
+30
+00:01:50,880 --> 00:01:53,610
+But if you grab the current version, that would be the best option.
+
+31
+00:01:53,940 --> 00:01:57,540
+So the next thing that you should have installed is the Get Virgin control system.
+
+32
+00:01:57,540 --> 00:02:00,180
+I would suggest making comments throughout the course.
+
+33
+00:02:00,750 --> 00:02:06,420
+It doesn't have to be after every video, but whenever you feel, you know, you see fit, we will be
+
+34
+00:02:06,420 --> 00:02:10,920
+needing to use git at the end to deploy to Hiroku so you can download it.
+
+35
+00:02:10,920 --> 00:02:16,770
+They get Dasch AskMen.com or you can install it with homebrewed on a Mac and there's other ways to install
+
+36
+00:02:16,770 --> 00:02:17,760
+on Linux and stuff.
+
+37
+00:02:18,840 --> 00:02:25,710
+So Postman is an API tool or an HTTP client that we're going to use to test out backend endpoints or
+
+38
+00:02:25,710 --> 00:02:32,520
+back end routes before we actually integrate them into our front end and to react and into our reduc
+
+39
+00:02:32,520 --> 00:02:33,300
+state flow.
+
+40
+00:02:33,510 --> 00:02:36,330
+So you can download this at Posman dot com.
+
+41
+00:02:36,870 --> 00:02:40,830
+And then I also want to just give a shout out to my partner on this course, Bushier.
+
+42
+00:02:41,040 --> 00:02:46,680
+So he had a huge hand in the project for this course and he's actually going to be covering the Q&amp;A
+
+43
+00:02:46,680 --> 00:02:48,090
+section on Udemy.
+
+44
+00:02:48,300 --> 00:02:55,710
+So if you have a question, if you run into some issues and you leave a message in the Q&amp;A, either
+
+45
+00:02:55,710 --> 00:02:57,810
+Boissiere or myself, we'll get back to you.
+
+46
+00:02:57,810 --> 00:03:05,160
+And he's more than capable of handling the Q&amp;A actually specializes in e-commerce with React and Redux
+
+47
+00:03:05,160 --> 00:03:06,030
+and Express.
+
+48
+00:03:06,360 --> 00:03:09,030
+And he also has a YouTube channel like Coding with Boissiere.
+
+49
+00:03:09,030 --> 00:03:11,070
+So if you want to give him a subscribe.
+
+50
+00:03:11,880 --> 00:03:12,240
+All right.
+
+51
+00:03:12,240 --> 00:03:14,550
+So let's jump into Vrsaljko code.
+
+52
+00:03:14,550 --> 00:03:19,320
+And I just want to kind of go over the extensions in the settings that I'm using, just in case you
+
+53
+00:03:19,320 --> 00:03:25,560
+want to follow along to a tee and you don't want to run into any issues where, you know, our environments
+
+54
+00:03:25,560 --> 00:03:30,450
+don't match up or something's happening with with with my screen that's not happening with yours.
+
+55
+00:03:30,870 --> 00:03:33,900
+So as far as extensions, nothing nothing spectacular.
+
+56
+00:03:33,900 --> 00:03:39,090
+I'm using this S7 react redux, graphical react, native snippets.
+
+57
+00:03:39,330 --> 00:03:42,870
+And basically I just use this to quickly generate react components.
+
+58
+00:03:43,170 --> 00:03:48,270
+So we have shortcuts for lots of different things, imports, exports.
+
+59
+00:03:48,510 --> 00:03:50,160
+I don't use it too much for that though.
+
+60
+00:03:50,160 --> 00:03:53,610
+I basically just use it for the for these here.
+
+61
+00:03:53,610 --> 00:03:58,410
+So to generate react components, if like if you want a class component, you can do RCC.
+
+62
+00:03:58,740 --> 00:04:04,710
+What we'll be using for the most part is the react arrow function right here.
+
+63
+00:04:04,710 --> 00:04:05,750
+R.A.F. see.
+
+64
+00:04:05,760 --> 00:04:08,310
+So react arrow function component export.
+
+65
+00:04:08,430 --> 00:04:11,130
+I like to use this syntax for my components.
+
+66
+00:04:11,640 --> 00:04:18,810
+All right, so if that bracket pair there is something I recommend but definitely isn't needed, it
+
+67
+00:04:18,810 --> 00:04:23,730
+just kind of organizes things visually because it colorize is your curly braces, your brackets, your
+
+68
+00:04:23,730 --> 00:04:26,400
+parentheses and just makes everything nice and neat.
+
+69
+00:04:26,400 --> 00:04:32,520
+And you can see, you know what where the curly braces and you can see these are purple, the nested
+
+70
+00:04:32,520 --> 00:04:33,570
+ones in here are blue.
+
+71
+00:04:33,990 --> 00:04:37,410
+So I've used that for years, this auto rename tag.
+
+72
+00:04:37,410 --> 00:04:40,950
+So this works with HTML and J.S. React.
+
+73
+00:04:41,220 --> 00:04:46,230
+Basically if you change the beginning tag it's going to change the ending tag as well automatically.
+
+74
+00:04:46,380 --> 00:04:48,780
+So you'll see that happen on my screen.
+
+75
+00:04:48,780 --> 00:04:52,830
+And that's why and I would suggest adding this to this code.
+
+76
+00:04:53,790 --> 00:04:54,420
+Let's see what else.
+
+77
+00:04:54,420 --> 00:04:59,190
+I'm also using the JavaScript S6 code snippets I don't use.
+
+78
+00:04:59,260 --> 00:05:04,690
+This too much, it's basically for just console logs, you can just do CLG enter and it will print out
+
+79
+00:05:04,690 --> 00:05:05,620
+console log.
+
+80
+00:05:05,770 --> 00:05:08,560
+So it's not something you need, but it's something that I do use.
+
+81
+00:05:09,170 --> 00:05:13,260
+And then lastly, I have prettier install, which is a code formatter.
+
+82
+00:05:13,570 --> 00:05:18,550
+Now as far as like excellent and setting up lending, I'm not going to do that.
+
+83
+00:05:18,550 --> 00:05:21,280
+I just want to keep everything kind of bare bones.
+
+84
+00:05:21,490 --> 00:05:25,810
+But I do use pretty er to to actually remove semicolons.
+
+85
+00:05:25,930 --> 00:05:30,360
+I don't use semicolon so I set it to delete them if I accidentally put one in.
+
+86
+00:05:30,670 --> 00:05:32,490
+You can do the other way around as well.
+
+87
+00:05:33,250 --> 00:05:35,470
+Also for, for single quotes.
+
+88
+00:05:35,470 --> 00:05:39,160
+And I'll show you my prettier setup in a second, but I do use that.
+
+89
+00:05:40,030 --> 00:05:42,580
+So now I'm just going to go to my settings here.
+
+90
+00:05:43,990 --> 00:05:46,840
+And one thing I do use is the Savon format.
+
+91
+00:05:46,840 --> 00:05:52,390
+So if we search for save or I said that backwards format on save.
+
+92
+00:05:54,460 --> 00:06:00,700
+You see, I have this checked, and basically what that means is if I edit something, so let's just
+
+93
+00:06:00,700 --> 00:06:02,100
+open up some file here.
+
+94
+00:06:02,860 --> 00:06:08,800
+So if I have this, like over here and it's not formatted nicely when I save, it automatically puts
+
+95
+00:06:08,800 --> 00:06:09,340
+it back.
+
+96
+00:06:10,000 --> 00:06:11,800
+Also, I'm not using semicolon.
+
+97
+00:06:11,830 --> 00:06:16,840
+So if I have a semicolon and I save it just gets rid of it if I have double quotes.
+
+98
+00:06:17,170 --> 00:06:24,130
+So if I choose, you know, to use double quotes here and save it automatically changes it single.
+
+99
+00:06:24,460 --> 00:06:29,360
+And where I have that configured is in settings and then if we search for prettier.
+
+100
+00:06:31,330 --> 00:06:37,060
+So my setup is not not too crazy.
+
+101
+00:06:37,060 --> 00:06:47,230
+I just have a single quote checked and I have semicolons unchecked and I have single quote checked and
+
+102
+00:06:47,230 --> 00:06:53,950
+then my tab with I'm using to and if if we take a look at my settings file, if we do command shift
+
+103
+00:06:53,950 --> 00:07:00,850
+P and settings and open the adjacent file here, this is just all my settings, my font size, which
+
+104
+00:07:00,850 --> 00:07:08,110
+is obviously beefed up so you guys can see it, the terminal font size, prettier single quote set to
+
+105
+00:07:08,110 --> 00:07:08,530
+true.
+
+106
+00:07:08,530 --> 00:07:09,820
+So nothing crazy.
+
+107
+00:07:09,820 --> 00:07:16,810
+I know some people have these insane VSC code configurations, but I don't do that because I, I do
+
+108
+00:07:16,810 --> 00:07:18,190
+a lot of videos and courses.
+
+109
+00:07:18,190 --> 00:07:20,980
+So I like to try to keep things as bare bones as possible.
+
+110
+00:07:21,160 --> 00:07:27,400
+But still using the rules that I like, like no semicolons and, you know, single quote, stuff like
+
+111
+00:07:27,400 --> 00:07:27,700
+that.
+
+112
+00:07:28,060 --> 00:07:29,770
+So that's pretty much it for my setup.
+
+113
+00:07:29,770 --> 00:07:33,010
+So it's up to you on what you want to use.
+
+114
+00:07:33,010 --> 00:07:34,810
+I know a lot of people use semicolons.
+
+115
+00:07:34,810 --> 00:07:38,800
+I just stopped using them maybe three or four months ago, but.
+
+116
+00:07:39,040 --> 00:07:39,590
+But that's it.
+
+117
+00:07:39,610 --> 00:07:43,180
+So in the next video, we'll jump right in and get started on our project.

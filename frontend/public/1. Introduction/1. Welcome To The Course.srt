@@ -1,0 +1,99 @@
+1
+00:00:00,180 --> 00:00:01,080
+Hey, what's going on, guys?
+
+2
+00:00:01,110 --> 00:00:05,430
+Welcome to my Mern stack e commerce course, so I just want to take a couple of minutes and kind of
+
+3
+00:00:05,460 --> 00:00:08,970
+let you know what this course is about, what's required and so on.
+
+4
+00:00:09,240 --> 00:00:14,730
+So this is a single project cause it's one large project, probably the largest that I've done in the
+
+5
+00:00:14,730 --> 00:00:15,270
+course.
+
+6
+00:00:15,510 --> 00:00:20,220
+And it's going to be an e-commerce platform with a full fledged, you know, shopping cart checkout
+
+7
+00:00:20,220 --> 00:00:26,070
+system will integrate the PayPal API so we can pay with PayPal or credit or debit card.
+
+8
+00:00:26,820 --> 00:00:29,220
+We'll have a product review and rating system.
+
+9
+00:00:29,640 --> 00:00:35,130
+Customers will be able to, you know, view all their orders, will have an admin area where you can
+
+10
+00:00:35,250 --> 00:00:38,910
+manage your users, your products, your orders and so on.
+
+11
+00:00:39,600 --> 00:00:44,670
+Now, as far as what you need to know to take this course, I would say at least the basics of react.
+
+12
+00:00:44,670 --> 00:00:50,220
+You definitely don't have to be a pro as long as you know what a component is, what state is, what
+
+13
+00:00:50,220 --> 00:00:52,380
+props are, just the very basics.
+
+14
+00:00:52,380 --> 00:00:55,560
+If you've watched a crash course or two, that should be enough.
+
+15
+00:00:55,560 --> 00:01:01,050
+And as far as the back end, using note and express, you don't really have to have much experience.
+
+16
+00:01:01,050 --> 00:01:04,380
+But if you can build a simple rest API, that's fine.
+
+17
+00:01:04,860 --> 00:01:05,280
+You don't know.
+
+18
+00:01:05,370 --> 00:01:06,720
+You don't have to know, Jason.
+
+19
+00:01:06,720 --> 00:01:10,410
+Web tokens or anything like that because we're going to go through all that in this course.
+
+20
+00:01:10,710 --> 00:01:11,080
+All right.
+
+21
+00:01:11,100 --> 00:01:13,680
+So again, this is project based.
+
+22
+00:01:13,680 --> 00:01:16,910
+It's not a video documentation type course.
+
+23
+00:01:17,100 --> 00:01:22,140
+So if you like to jump in and get your hands dirty and actually build something that you can in the
+
+24
+00:01:22,140 --> 00:01:26,690
+end customize, you can put on your portfolio, then I think you're going to like this course.
+
+25
+00:01:26,850 --> 00:01:32,130
+So in the next video, I want to jump in and show you a demo of the exact project that will be building.

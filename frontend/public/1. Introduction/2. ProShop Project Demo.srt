@@ -1,0 +1,507 @@
+1
+00:00:00,300 --> 00:00:04,230
+All right, so I just want to give you guys an overview of what will be building in this course, so
+
+2
+00:00:04,230 --> 00:00:06,010
+we're going to build this from absolute scratch.
+
+3
+00:00:06,030 --> 00:00:07,860
+We're going to deploy it to Heroku.
+
+4
+00:00:08,190 --> 00:00:13,200
+And I'm going to leave the Redux Dev tools open so you can see the actions that are fired off and you
+
+5
+00:00:13,200 --> 00:00:15,300
+can see the state def and all that stuff.
+
+6
+00:00:15,300 --> 00:00:17,180
+And if you don't understand this, don't worry about it.
+
+7
+00:00:17,400 --> 00:00:18,800
+We're going to get to Redox later.
+
+8
+00:00:19,350 --> 00:00:21,690
+So on the home page here we have our Navar.
+
+9
+00:00:21,690 --> 00:00:23,010
+We can search products.
+
+10
+00:00:23,220 --> 00:00:25,350
+We have a link to our shopping cart.
+
+11
+00:00:25,350 --> 00:00:27,960
+We have a sign in register page.
+
+12
+00:00:28,230 --> 00:00:33,240
+And right here we have a carousel where we're showing the top rated products and we can click on one
+
+13
+00:00:33,240 --> 00:00:33,570
+of these.
+
+14
+00:00:33,570 --> 00:00:35,190
+It takes us to the product page.
+
+15
+00:00:35,610 --> 00:00:40,700
+And then down here we have the latest products and we have six total in the database.
+
+16
+00:00:40,950 --> 00:00:45,240
+Now, if we have more than 10, then we're going to show our pagination links down here.
+
+17
+00:00:45,450 --> 00:00:47,850
+You can see in our state how we get the products.
+
+18
+00:00:48,030 --> 00:00:52,140
+We also get the number of pages, which is one and the page, which is one.
+
+19
+00:00:52,350 --> 00:00:56,700
+So if pages is more than one, it'll show the links down here to go to the next page.
+
+20
+00:00:57,240 --> 00:01:00,020
+So let's click on one of these and take a look at the product page.
+
+21
+00:01:00,150 --> 00:01:02,820
+We have an image title description.
+
+22
+00:01:02,820 --> 00:01:05,250
+We have the the overall rating.
+
+23
+00:01:05,250 --> 00:01:09,920
+So the the average rating, the quantity which pertains to the count in stock.
+
+24
+00:01:09,930 --> 00:01:14,220
+So if we look at this in the state here, account in stock for this product is three.
+
+25
+00:01:14,220 --> 00:01:16,200
+So we get an option of three.
+
+26
+00:01:16,620 --> 00:01:18,990
+And then down here we have our views.
+
+27
+00:01:19,320 --> 00:01:23,550
+And if you're logged in, you can see a form here to write a review.
+
+28
+00:01:23,730 --> 00:01:26,850
+And of course, you can only write one review per product.
+
+29
+00:01:27,420 --> 00:01:30,780
+So I'm just going to pretend like I just came to the site and I'm going to buy this.
+
+30
+00:01:30,780 --> 00:01:33,080
+So I'll add this to my cart immediately.
+
+31
+00:01:33,090 --> 00:01:36,230
+It shows it in my shopping cart if I add something else.
+
+32
+00:01:37,140 --> 00:01:40,010
+So this this Aleksa here is actually out of stock.
+
+33
+00:01:40,020 --> 00:01:41,430
+So this is disabled.
+
+34
+00:01:41,430 --> 00:01:42,270
+We can't add it.
+
+35
+00:01:42,780 --> 00:01:44,640
+So I'll grab this mouse right here.
+
+36
+00:01:45,360 --> 00:01:46,190
+Add to cart.
+
+37
+00:01:46,380 --> 00:01:51,120
+Now, if I change the quantity within the car, you'll see that this will actually update over here
+
+38
+00:01:51,120 --> 00:01:53,010
+the number of items and the price.
+
+39
+00:01:53,190 --> 00:01:56,160
+And of course, our cart items are stored in local storage.
+
+40
+00:01:56,160 --> 00:01:57,390
+So we can leave the page.
+
+41
+00:01:57,390 --> 00:02:00,660
+We can even close the browser and come back and the products will still be here.
+
+42
+00:02:01,050 --> 00:02:04,980
+So let's proceed to checkout and this is as far as we can go without logging in.
+
+43
+00:02:04,980 --> 00:02:11,580
+So I'm going to log in as John, which is just a regular customer account, and it'll take me right
+
+44
+00:02:11,580 --> 00:02:14,250
+to the shipping page and you can see the steps up here.
+
+45
+00:02:14,250 --> 00:02:17,670
+So sign in shipping payment and then place order.
+
+46
+00:02:18,060 --> 00:02:20,460
+So I'm going to just put whatever in here.
+
+47
+00:02:20,460 --> 00:02:27,510
+And this those shipping address will also get saved to local storage so that if you come back, it'll
+
+48
+00:02:27,510 --> 00:02:27,960
+be here.
+
+49
+00:02:29,380 --> 00:02:34,660
+So continue now for the payment method, we're going to implement the PayPal API, you can also use
+
+50
+00:02:34,660 --> 00:02:35,860
+a debit or credit card.
+
+51
+00:02:36,070 --> 00:02:38,740
+And the way we're going to build it, it's going to be scalable.
+
+52
+00:02:38,740 --> 00:02:43,090
+So you can add other payment methods if you want, like if you want to add stripe or something like
+
+53
+00:02:43,090 --> 00:02:43,440
+that.
+
+54
+00:02:43,900 --> 00:02:49,480
+In fact, if I click continue, you'll see over here calls card save pay method and we have a payment
+
+55
+00:02:49,480 --> 00:02:50,410
+method, PayPal.
+
+56
+00:02:50,410 --> 00:02:53,470
+So you could easily, you know, swap that out for Stripe.
+
+57
+00:02:53,560 --> 00:02:55,530
+You just have to implement Stripe's API.
+
+58
+00:02:55,930 --> 00:02:58,780
+So here we have basically a summary of everything.
+
+59
+00:02:58,790 --> 00:03:04,390
+So all of our items, the payment method, the shipping address, the price, including shipping and
+
+60
+00:03:04,390 --> 00:03:05,170
+taxes.
+
+61
+00:03:05,500 --> 00:03:06,880
+So we'll click place order.
+
+62
+00:03:07,120 --> 00:03:11,990
+And what that did is it put in order in the database, but it's set to not paid.
+
+63
+00:03:12,250 --> 00:03:16,570
+So there's going to be a flag is paid and that's set to false until we actually pay.
+
+64
+00:03:16,840 --> 00:03:17,920
+Same thing with delivered.
+
+65
+00:03:17,920 --> 00:03:21,510
+We can set an admin, can set this to delivered as well.
+
+66
+00:03:21,880 --> 00:03:24,010
+So to pay we can use PayPal.
+
+67
+00:03:24,010 --> 00:03:30,100
+You can also use a debit or credit card and we're going to set up a fake sandbox account that we can
+
+68
+00:03:30,100 --> 00:03:30,430
+use.
+
+69
+00:03:30,430 --> 00:03:32,470
+So you can see sandbox dot PayPal.
+
+70
+00:03:32,680 --> 00:03:39,040
+So we're not dealing with actual money right now and it's going to lock me in automatically as my fake
+
+71
+00:03:39,040 --> 00:03:42,670
+John Doe account and these fake bank accounts.
+
+72
+00:03:42,670 --> 00:03:45,190
+So I'll click pay now and then.
+
+73
+00:03:45,190 --> 00:03:49,990
+Once that process is, this will reload and now you'll see paid on with the date.
+
+74
+00:03:50,320 --> 00:03:55,630
+And if we look at our order over here is paid is now set to true payment result we're storing in the
+
+75
+00:03:55,630 --> 00:03:56,180
+database.
+
+76
+00:03:56,200 --> 00:04:02,640
+This is actually information from PayPal, including like the PayPal email that the ID stuff like that.
+
+77
+00:04:03,280 --> 00:04:04,700
+So now this has been paid.
+
+78
+00:04:04,720 --> 00:04:09,940
+So if I go up here and I view my profile, I can see that order in my profile.
+
+79
+00:04:10,120 --> 00:04:14,980
+I can see where when it's been paid, I can see it's not been delivered or set out for delivered.
+
+80
+00:04:14,980 --> 00:04:16,720
+And I can view the details as well.
+
+81
+00:04:17,140 --> 00:04:20,410
+And then over here I can update my user data if I want.
+
+82
+00:04:21,190 --> 00:04:26,200
+OK, so we can also leave reviews and we can only leave one review.
+
+83
+00:04:26,200 --> 00:04:27,700
+You can see already left one here.
+
+84
+00:04:27,700 --> 00:04:32,740
+So if I try to put something in here, it's going to tell me that I already reviewed this product.
+
+85
+00:04:33,410 --> 00:04:38,740
+OK, now I'm going to log out here and log back in as an admin.
+
+86
+00:04:44,220 --> 00:04:49,550
+And when you're an admin, you get this additional dropdown item and we can see all of our users here,
+
+87
+00:04:49,890 --> 00:04:53,280
+so we have admin, we have John and Jane Doe, which are customers.
+
+88
+00:04:53,550 --> 00:04:55,260
+And I could edit their information.
+
+89
+00:04:55,260 --> 00:05:00,510
+I could set them to admin if I wanted to, and then they would be able to, you know, have this functionality.
+
+90
+00:05:00,930 --> 00:05:02,880
+We can see all the products.
+
+91
+00:05:02,880 --> 00:05:04,950
+And I'll show you how to add a product in a second.
+
+92
+00:05:05,250 --> 00:05:07,280
+But if we go here, we can see orders.
+
+93
+00:05:07,320 --> 00:05:09,480
+This is the order that John Doe just placed.
+
+94
+00:05:09,840 --> 00:05:13,710
+If I go to details, as long as I'm an admin, I'll see this mark as delivered.
+
+95
+00:05:13,950 --> 00:05:19,560
+And if I click that, it's going to update the database and you can see is delivered is now set to true
+
+96
+00:05:19,800 --> 00:05:23,050
+and then delivered at is set to whatever the date and time is.
+
+97
+00:05:23,430 --> 00:05:29,040
+So now the user can come in to this order page and see that it's been delivered or set for delivered
+
+98
+00:05:29,640 --> 00:05:30,570
+and let's see.
+
+99
+00:05:30,570 --> 00:05:34,010
+So products let's go ahead and create a project product.
+
+100
+00:05:34,020 --> 00:05:38,790
+So as soon as I click this, it's going to create it and bring me to the edit page with some sample
+
+101
+00:05:38,790 --> 00:05:40,920
+data so I can then add in here.
+
+102
+00:05:40,920 --> 00:05:49,770
+I'll just say test product and for the price will say 10 and let's do 10 and stock them for the image.
+
+103
+00:05:49,770 --> 00:05:54,690
+You can either manually put a link in here to an image or you are all to an image or you can choose
+
+104
+00:05:54,690 --> 00:05:55,340
+to upload.
+
+105
+00:05:55,650 --> 00:06:01,830
+So I'll just grab this Chrome logo so that gets uploaded and then we click update and there's our test
+
+106
+00:06:01,830 --> 00:06:02,280
+product.
+
+107
+00:06:02,280 --> 00:06:05,580
+And if there's more than 10, it'll also have pagination here as well.
+
+108
+00:06:05,580 --> 00:06:09,270
+As you can see in the state, it uses that same product list state.
+
+109
+00:06:09,780 --> 00:06:14,700
+So if we go back to the front page here and go down, you'll see the test product.
+
+110
+00:06:15,210 --> 00:06:19,890
+And we have that product page here that we can add to the cart we can now purchase.
+
+111
+00:06:20,310 --> 00:06:24,150
+So we can obviously delete them or edit them.
+
+112
+00:06:24,150 --> 00:06:25,100
+We can delete them.
+
+113
+00:06:26,260 --> 00:06:31,470
+OK, so that clears that out and now it's gone and we can also search our filters.
+
+114
+00:06:31,470 --> 00:06:36,180
+So if I just put like IP, that's going to narrow it down to to the iPhone.
+
+115
+00:06:36,180 --> 00:06:39,300
+If I clear this out and click search, it just takes us to the home page.
+
+116
+00:06:39,720 --> 00:06:42,350
+So there's actually quite a bit of functionality here.
+
+117
+00:06:42,480 --> 00:06:45,750
+I mean, it's no eBay, but we're building this from the ground up.
+
+118
+00:06:45,750 --> 00:06:48,630
+We're not using, you know, woo commerce or something like that.
+
+119
+00:06:48,870 --> 00:06:52,710
+It's just create react app and then all custom code from there.
+
+120
+00:06:52,830 --> 00:06:55,170
+No copying and pasting or anything like that.
+
+121
+00:06:55,170 --> 00:06:58,710
+We do have some just sample products, some sample data that will load.
+
+122
+00:06:58,950 --> 00:07:05,010
+We're going to build the database ceder so that we can seed the database with products and users, but
+
+123
+00:07:05,010 --> 00:07:05,610
+that's about it.
+
+124
+00:07:05,610 --> 00:07:09,570
+Everything else is hand coded and you're going to learn a lot in this course.
+
+125
+00:07:09,570 --> 00:07:14,370
+Even if you already know react and you know the mission stack, I think you'll still have fun building
+
+126
+00:07:14,370 --> 00:07:14,880
+this out.
+
+127
+00:07:15,000 --> 00:07:16,760
+So let's go ahead and get started.
